@@ -6,14 +6,13 @@
 /*   By: inowak-- <inowak--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 10:39:48 by inowak--          #+#    #+#             */
-/*   Updated: 2025/04/24 14:21:47 by inowak--         ###   ########.fr       */
+/*   Updated: 2025/04/25 15:45:33 by inowak--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # pragma once 
 
 # include <iostream>
-# include <list>
 
 template <typename T, typename Func>
 
@@ -25,4 +24,4 @@ void iter(T *array, int length, Func func){
 }
 
 template <typename T>
-void funct(T element){std::cout << element << ", ";}
+void funct(T &element){std::cout << element << ", ";}
